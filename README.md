@@ -1,17 +1,16 @@
-# GPU Matrix Exponentiation using CUDA and Python
-
+**GPU Matrix Exponentiation using CUDA and Python**
 Compute A^100 using exponentiation by squaring on CPU and GPU (Numba CUDA).
 
-## Run
+**Run**
 
 ```bash
 pip install -r requirements.txt
 python src/benchmark.py
 ```
 
-# GPU Matrix Exponentiation using CUDA and Python
+**GPU Matrix Exponentiation using CUDA and Python**
 
-## Overview
+**Overview**
 
 This project implements matrix exponentiation on both CPU and GPU and compares their performance.
 
@@ -29,9 +28,8 @@ The project uses:
 * Shared Memory Optimization
 * Exponentiation by Squaring
 
----
 
-## Features
+**Features**
 
 * CPU Implementation
 * CUDA GPU Implementation
@@ -40,9 +38,8 @@ The project uses:
 * Performance Benchmarking
 * Correctness Verification
 
----
 
-## Project Structure
+**Project Structure**
 
 src/
 
@@ -58,35 +55,18 @@ report/
 
 * Assignment_Report.pdf
 
----
 
-## Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/matrix-exponentiation-gpu.git
-
-cd matrix-exponentiation-gpu
-
-Install dependencies:
-
-pip install -r requirements.txt
-
----
-
-## Verify CUDA
+**Verify CUDA**
 
 python -c "from numba import cuda; print(cuda.gpus)"
 
----
 
-## Run Benchmark
+**Run Benchmark**
 
 python src/benchmark.py
 
----
 
-## Sample Output
+**Sample Output**
 
 Generating 1024x1024 matrix...
 
@@ -98,9 +78,8 @@ Speedup : 15.58x
 
 Maximum Error : 0.00021
 
----
 
-## Algorithm
+**Algorithm**
 
 Exponentiation by Squaring
 
@@ -118,9 +97,8 @@ which reduces complexity to:
 
 O(log n)
 
----
 
-## Performance
+**Performance**
 
 | Matrix Size | CPU    | GPU   | Speedup |
 | ----------- | ------ | ----- | ------- |
@@ -128,15 +106,8 @@ O(log n)
 | 1024x1024   | 18.5s  | 0.93s | 19.8x   |
 | 2048x2048   | 147.3s | 5.2s  | 28.3x   |
 
----
 
-## Author
-
-Mohit Mathur
-
----
-
-## Future Work
+**Future Work**
 
 * cuBLAS Integration
 * Multi-GPU Support
